@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Mahmoud Safaya</title>
+    <link rel="stylesheet" href="./styles/bgAnimate.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+
+    <!--The background animation of the page-->
+    <div class="body-bg">
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+
+        <div class="glowing">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+    </div>
+
+    <!--Start of the website-->
+    <!--The svg-->
+    <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="home">
+            <path fill="#4A44F2" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,133.3C384,107,
+            480,85,576,117.3C672,149,768,235,864,250.7C960,267,1056,213,1152,165.3C1248,117,1344,75,
+            1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,
+            0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+    </div>
+
+    <!-- The navbar code -->
+    <nav id="navbar_menu">
+        <h2 class="logo"><a href="#Home">MAHMOUD</a></h2>
+        <ul id="navbar_list">
+            <li class="active_section">Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    
+    <!--The me box-->
+    <header class="main-box" id="Home">
+        <div class="leftSide">
+            <h1><span>I'M</span> MAHMOUD SAFAYA</h1>
+            <h3>FRONT END DEVELOPER</h3>
+            <p>Hi!, My name is Mahmoud and I'm <strong>Front End Deverloper</strong> (Web Designer). I have the required experience to code a great website, and i'm 20 years old and this is my website.
+            </p>
+            <a href="#About" class="button">More Detailes</a>
+        </div>
+
+        <div class="rightSide">
+            <img src="./images/image.jpg" alt="Mahmoud Safaya">
+        </div>
+
+    </header>
+
+    <!--The about me section-->
+    <article class="aboutMe" id="About">
+        <section class="discribution">
+            <h1 class="headers">About Me</h1>
+            <p>Front end developer, computer science student and hard working person. This me tring to bulid a  carrer for myself. I have studied web development for the last two years, I have done a lot of projects and planning to do more<br><br>
+                Business, personal or any other kind of website, just 
+                <a href="#Contact" class="Con_A"><b>Contact Me</b></a>
+                 and I will be glade to do a great work for you.<br><br>
+
+                 This website will be <b>updated</b> from time to time, so keep watching
+            </p>
+        </section>
+        <section class="svgImage">
+            <img src="./images/Group 45.png" alt="Person">
+        </section>
+    </article>
+
+    <!--The skills section-->
+    <article class="myskills" id="Skills">
+
+        <section class="leftSec">
+            <img src="./images/Group 65.png" alt="Skill Person">
+        </section>
+
+        <section class="rightSec">
+            <h1 class="headers">My Skills</h1>
+
+            <div class="theSkills">
+                <div class="shown-skills">
+                    <div class="html">
+                        <h1>HTML</h1>
+                        <meter value="90" max="100" class="html"></meter>
+                    </div>
+                    <div class="css">
+                        <h1>CSS</h1>
+                        <meter value="85" max="100" class="css"></meter>
+                    </div>
+                    <div class="js">
+                        <h1>JAVASCRIPT</h1>
+                        <meter value="70" max="100" class="js"></meter>
+                    </div>
+                    <div class="react">
+                        <h1>REACT.JS</h1>
+                        <meter value="60" max="100" class="react"></meter>
+                    </div>    
+                </div>
+
+                <div class="hidden-skills" id="hidden-skills">
+                    <div class="bootstrap">
+                        <h1>BOOTSTRAP</h1>
+                        <meter value="85" max="100" class="bootstrap"></meter>
+                    </div>
+                    <div class="sass">
+                        <h1>SASS</h1>
+                        <meter value="80" max="100" class="sass"></meter>
+                    </div>
+                    <div class="jquery">
+                        <h1>JQUERY</h1>
+                        <meter value="75" max="100" class="jquery"></meter>
+                    </div>
+                </div>
+
+                <button class="see-more" id="see-more">See More</button>
+
+            </div>
+        </section>
+    </article>
+
+    <!--The portfolio section-->
+    <article class="portfolio" id="Portfolio">
+        <h1 class="headers">My Projects</h1>
+        <div class="project" id="fourth-project">
+            <img src="./images/otaku.PNG" alt="Project">
+            <div class="details">
+                <h2>News Blog</h2>
+                <p>BLog website to publish the some news.</p>
+            </div>
+        </div>
+
+        <div class="project" id="second-project">
+            <img src="./images/image5.PNG" alt="Project">
+            <div class="details">
+                <h2>Restaurant</h2>
+                <p>Restaurant website for someone's business to have your good meal.</p>
+            </div>
+        </div>
+
+        <div class="project" id="first-project">
+            <img src="./images/redStore.PNG" alt="Project">
+            <div class="details">
+                <h2>Red Store</h2>
+                <p>E-Commerece website to show product and info about the store or the business.</p>
+            </div>
+        </div>
+
+        <div class="project" id="third-project">
+            <img src="./images/weather.PNG" alt="Project">
+            <div class="details">
+                <h2>Weather site</h2>
+                <p>A website for you to know the weather of the day, it was built with <b>React.js</b></p>
+            </div>
+        </div>
+
+        <div class="project" id="fifth-project">
+            <img src="./images/save_a_link.PNG" alt="Project">
+            <div class="details">
+                <h2>Save a Link</h2>
+                <p>You have a link want to save it, use this website</p>
+            </div>
+        </div>
+    </article>
+
+    <!--The contact section-->
+    <article class="contact" id="Contact">
+        <h1 class="headers">Contact Me</h1>
+        <div class="gmail">
+            <h2>E-MAIL</h2>
+            <p>mahmoudsafaya18@gmail.com</p>
+        </div>
+        <div class="phone">
+            <h2>PHONE</h2>
+            <p><b>EG:</b> 01554408074</p>
+        </div>
+        <div class="social">
+            <h2>SOCIAL MEDIA</h2>
+            <div class="accounts">
+                <a href="https://web.facebook.com/me/">
+                    <i class="fab fa-facebook"></i>
+                    <span>FACEBOOK</span>
+                </a>
+            </div>
+            <div class="accounts">
+                <a href="https://www.instagram.com/mahmoudsafaya8338/">
+                    <i class="fab fa-instagram-square"></i>
+                    <span>INSTAGRAM</span>
+                </a>
+            </div>
+            <div class="accounts">
+                <a href="https://www.linkedin.com/in/mahmoud-safaya-b9b32019b/">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LINKEDIN</span>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <button class="toTop">UP</button>
+
+    <!--The footer-->
+    <footer>
+        <p>copyright &copy; 2020 <span>Mahmoud Safaya</span> all rights reserved</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/951a4a044c.js" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

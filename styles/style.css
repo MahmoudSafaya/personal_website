@@ -1,0 +1,525 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*The h1 in each of the about me & skills sections*/
+.headers {
+  color: #3726A6;
+  font-size: 30px;
+  padding: 0 15px;
+  border-left: 5px solid #F2BE22;
+  margin-bottom: 40px;
+}
+
+.svg {
+  width: 100%;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  padding: 40px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav .logo {
+  float: left;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+  margin-left: 150px;
+}
+
+nav .logo a {
+  color: #F2E635;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin-right: 150px;
+}
+
+nav ul li {
+  float: left;
+  margin: 0 30px;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  color: #fff;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.active_section {
+  color: #F2E635;
+}
+
+.main-box {
+  width: 1000px;
+  height: 550px;
+  border: 5px solid #ddd;
+  border-top-width: 40px;
+  padding: 20px;
+  margin: 0px 17%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #eee;
+  margin-top: -200px;
+}
+
+.main-box .leftSide,
+.main-box .rightSide {
+  width: 50%;
+  padding: 20px;
+}
+
+.main-box .leftSide {
+  line-height: 1.7;
+}
+
+.main-box .leftSide h1 {
+  color: #4A44F2;
+  font-size: 35px;
+}
+
+.main-box .leftSide h3 {
+  color: #F2BE22;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.main-box .leftSide p {
+  opacity: 0.7;
+  color: #333;
+}
+
+.main-box .leftSide .button {
+  border: none;
+  margin: 60px 0 -20px;
+  background: #3726A6;
+  color: #fff;
+  text-decoration: none;
+  padding: 18px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  display: inline-block;
+}
+
+.main-box .leftSide .button:hover a {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-box .leftSide .button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-box .rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+}
+
+.main-box .rightSide img {
+  margin-top: -30px;
+  width: 60%;
+  height: 60%;
+  -webkit-box-shadow: 70px 70px #F2E635;
+          box-shadow: 70px 70px #F2E635;
+}
+
+.aboutMe {
+  width: 1200px;
+  margin: 100px auto;
+  padding: 100px 0 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+}
+
+.aboutMe .discribution {
+  width: 70%;
+  padding: 0 40px 0 0;
+}
+
+.aboutMe .discribution p {
+  line-height: 1.7;
+  letter-spacing: 1px;
+  color: #333;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.aboutMe .discribution p span {
+  color: #F2BE22;
+}
+
+.aboutMe .discribution .Con_A {
+  color: #4A44F2;
+}
+
+.aboutMe .discribution .Con_A:hover {
+  color: #3726A6;
+}
+
+.aboutMe .svgImage {
+  width: 30%;
+}
+
+.myskills {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -o-justify-content: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  overflow: hidden;
+}
+
+.myskills .leftSec {
+  margin-top: -140px;
+}
+
+.myskills .rightSec {
+  width: 60%;
+}
+
+.myskills .rightSec .theSkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.myskills .rightSec .theSkills .shown-skills,
+.myskills .rightSec .theSkills .hidden-skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px;
+}
+
+.myskills .rightSec .theSkills .shown-skills div,
+.myskills .rightSec .theSkills .hidden-skills div {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  display: block;
+  background: #fff;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.html,
+.myskills .rightSec .theSkills .hidden-skills div.html {
+  color: #e54f26;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.bootstrap,
+.myskills .rightSec .theSkills .hidden-skills div.bootstrap {
+  color: #5c4484;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.css,
+.myskills .rightSec .theSkills .hidden-skills div.css {
+  color: #0c73b8;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.sass,
+.myskills .rightSec .theSkills .hidden-skills div.sass {
+  color: purple;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.js,
+.myskills .rightSec .theSkills .hidden-skills div.js {
+  color: #e7a42b;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.jquery,
+.myskills .rightSec .theSkills .hidden-skills div.jquery {
+  color: #126aaf;
+}
+
+.myskills .rightSec .theSkills .shown-skills div.react,
+.myskills .rightSec .theSkills .hidden-skills div.react {
+  color: #61DAFB;
+}
+
+.myskills .rightSec .theSkills .shown-skills div h1,
+.myskills .rightSec .theSkills .hidden-skills div h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.myskills .rightSec .theSkills meter::-webkit-meter-bar {
+  width: 270px;
+  height: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.myskills .rightSec .theSkills meter::-webkit-meter-optimum-value {
+  background: #333;
+}
+
+.myskills .rightSec .theSkills .see-more {
+  display: none;
+}
+
+.portfolio {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0;
+}
+
+.portfolio .project {
+  width: 30%;
+  margin: 16px;
+  height: 400px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 15px #777;
+          box-shadow: 2px 2px 15px #777;
+}
+
+.portfolio .project:hover .details {
+  margin-top: -90px;
+}
+
+.portfolio .project img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: -20px;
+}
+
+.portfolio .project .details {
+  position: absolute;
+  color: #fff;
+  background: #3726A6;
+  padding: 30px 20px;
+  margin-top: -10px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.portfolio .project .details h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.portfolio .project .details p {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin: 20px 0;
+}
+
+.contact {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0px;
+}
+
+.contact .gmail,
+.contact .phone,
+.contact .social {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.contact .gmail h2,
+.contact .phone h2,
+.contact .social h2 {
+  color: #F20505;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contact .gmail p,
+.contact .phone p,
+.contact .social p {
+  background: #f4f4f4;
+  padding: 20px 15px;
+  color: #333;
+  display: inline-block;
+  margin: 20px 30px 0 0;
+  font-size: 20px;
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8), inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.8), inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .gmail b,
+.contact .phone b,
+.contact .social b {
+  font-size: 22px;
+}
+
+.contact .social .accounts {
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+  display: inline-block;
+  margin: 20px 30px;
+  cursor: pointer;
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.contact .social .accounts:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact .social .accounts:first-of-type {
+  margin-left: 0;
+}
+
+.contact .social .accounts a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact .social .accounts i {
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.contact .social .accounts i.fa-facebook {
+  color: #3E578F;
+}
+
+.contact .social .accounts i.fa-instagram-square {
+  color: #333;
+}
+
+.contact .social .accounts i.fa-linkedin {
+  color: #0B79B8;
+}
+
+.contact .social .accounts span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.toTop {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  padding: 10px;
+  background: #3726A6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 5px #035;
+          box-shadow: 1px 1px 5px #035;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+  z-index: 100;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  background: #0a0909;
+  color: #fff;
+  padding: 30px;
+}
+
+footer p {
+  opacity: 0.8;
+}
+
+footer p span {
+  color: #F2E635;
+}
+
+/* it will animate the glowing box in the background... just cansel the comment to see
+
+@keyframes animate{
+    50%{
+        box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                5px 5px 15px rgba(0,0,0,0.1);
+    }
+    100%{
+        box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                5px 5px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 10px rgba(255,255,255,0.8),
+                inset 2px 2px 8px rgba(0,0,0,0.1);
+    }
+}
+
+*/
+.hide {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

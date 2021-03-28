@@ -1,0 +1,633 @@
+/*The start of the media of the mobile*/
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  svg {
+    display: none;
+  }
+  /*The Navbar*/
+  nav {
+    z-index: 3;
+    background: #4A44F2;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav ul {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav ul li {
+    float: none;
+    margin: 0;
+    font-size: 16px;
+  }
+  /*The Main-Box*/
+  .main-box {
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+    margin-top: 150px;
+    padding: 20px;
+  }
+  .main-box .leftSide,
+  .main-box .rightSide {
+    width: 100%;
+  }
+  .main-box .leftSide h1 span {
+    display: block;
+    margin: 0;
+  }
+  .main-box .leftSide p {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: #333;
+  }
+  .main-box .leftSide .button {
+    display: none;
+  }
+  .main-box .rightSide img {
+    display: none;
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0px;
+    margin: 50px auto;
+  }
+  .aboutMe .discribution {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .aboutMe .discribution p {
+    font-size: 17px;
+  }
+  .aboutMe .svgImage {
+    display: none;
+  }
+  .myskills {
+    width: 100%;
+    margin: 0px;
+    padding: 100px 10px;
+    display: block;
+  }
+  .myskills .leftSec {
+    display: none;
+  }
+  .myskills .rightSec {
+    width: 90%;
+    margin: 0 20px;
+  }
+  .myskills .rightSec .theSkills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 20px;
+  }
+  .myskills .rightSec .theSkills .shown-skills,
+  .myskills .rightSec .theSkills .hidden-skills {
+    margin: 0px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div,
+  .myskills .rightSec .theSkills .hidden-skills div {
+    margin: 20px 0px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div h1,
+  .myskills .rightSec .theSkills .hidden-skills div h1 {
+    font-size: 18px;
+  }
+  .myskills .rightSec .theSkills meter::-webkit-meter-bar {
+    width: 225px;
+    height: 15px;
+  }
+  .myskills .rightSec .theSkills .see-more {
+    width: 140px;
+    padding: 10px;
+    background: #272727;
+    color: #F2E635;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 5px #fff;
+            box-shadow: 1px 1px 5px #fff;
+    display: block;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .myskills .rightSec .theSkills .hidden-skills {
+    display: none;
+  }
+  .portfolio {
+    width: 100%;
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .portfolio .project {
+    width: 90%;
+    margin: 20px;
+    height: 240px;
+  }
+  .portfolio .project:hover .details {
+    margin-top: -100px;
+  }
+  .portfolio .project img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: -5px;
+  }
+  .portfolio .project .details {
+    padding: 20px;
+    margin-top: -20px;
+  }
+  .portfolio .project .details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .portfolio .project .details p {
+    margin: 20px 0;
+    line-height: 1.1;
+  }
+  .contact {
+    width: 100%;
+    margin: 0;
+    padding: 50px 30px;
+  }
+  .contact p {
+    margin: 20px 0px;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .contact .gmail,
+  .contact .phone,
+  .contact .social {
+    padding: 0px;
+  }
+  .contact .social .accounts {
+    display: block;
+    margin: 30px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  /*style of the to top button*/
+  .toTop {
+    right: 30px;
+    bottom: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+
+/*The media of the tablet*/
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  svg {
+    height: 250px;
+    z-index: 2;
+    position: absolute;
+  }
+  /*The Navbar*/
+  nav {
+    z-index: 30;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .logo {
+    margin-left: 50px;
+    float: left;
+  }
+  nav ul {
+    margin-right: 50px;
+    float: right;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  /*The Main-Box*/
+  .main-box {
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+    z-index: -7;
+    margin-top: 250px;
+    padding: 30px;
+  }
+  .main-box .leftSide,
+  .main-box .rightSide {
+    width: 100%;
+  }
+  .main-box .leftSide h1 span {
+    display: block;
+    margin: 0;
+  }
+  .main-box .leftSide p {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: #333;
+  }
+  .main-box .rightSide img {
+    display: none;
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0px;
+  }
+  .aboutMe .discribution {
+    width: 100%;
+    padding: 0 40px 0 50px;
+  }
+  .aboutMe .svgImage {
+    display: none;
+  }
+  .myskills {
+    width: 100%;
+    margin: 0px;
+    padding: 100px 10px;
+    display: block;
+  }
+  .myskills .leftSec {
+    display: none;
+  }
+  .myskills .rightSec {
+    width: 90%;
+    margin: 0 20px;
+    padding: 20px;
+  }
+  .myskills .rightSec .theSkills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 20px;
+  }
+  .myskills .rightSec .theSkills .shown-skills,
+  .myskills .rightSec .theSkills .hidden-skills {
+    margin: 0px 25px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div,
+  .myskills .rightSec .theSkills .hidden-skills div {
+    margin: 20px 0px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div h1,
+  .myskills .rightSec .theSkills .hidden-skills div h1 {
+    font-size: 18px;
+  }
+  .myskills .rightSec .theSkills meter::-webkit-meter-bar {
+    width: 200px;
+    height: 15px;
+  }
+  .portfolio {
+    width: 100%;
+    margin: 0;
+    padding: 50px 30px 50px 50px;
+  }
+  .portfolio .project {
+    width: 44%;
+    margin: 10px;
+    height: 250px;
+  }
+  .portfolio .project:hover .details {
+    margin-top: -80px;
+  }
+  .portfolio .project img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: -5px;
+  }
+  .portfolio .project .details {
+    padding: 20px;
+    margin-top: -10px;
+  }
+  .portfolio .project .details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .portfolio .project .details p {
+    margin: 20px 0;
+    line-height: 1.1;
+  }
+  .contact {
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+  }
+  .contact .gmail p {
+    margin: 10px;
+    display: inline-block;
+  }
+  .contact .phone p {
+    margin-left: 20px;
+    width: 270px;
+    text-align: center;
+  }
+  .contact .social .accounts {
+    display: block;
+    margin: 30px 20px;
+    width: 270px;
+    text-align: center;
+  }
+  .contact .social .accounts:first-of-type {
+    margin-left: 20px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop media query */
+@media (min-width: 992px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  svg {
+    height: auto;
+    position: absolute;
+  }
+  nav {
+    width: 100%;
+    padding: 40px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    padding: 30px 20px;
+  }
+  nav .logo {
+    float: left;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    margin-left: 50px;
+  }
+  nav ul {
+    float: right;
+    margin-right: 50px;
+  }
+  nav ul li {
+    margin: 0 20px;
+    display: inline-block;
+  }
+  .main-box {
+    width: 85%;
+    height: 550px;
+    border: 5px solid #ddd;
+    border-top-width: 40px;
+    margin: 0px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #eee;
+    margin-top: 130px;
+    z-index: 8;
+  }
+  .main-box .leftSide,
+  .main-box .rightSide {
+    width: 50%;
+    padding: 20px;
+  }
+  .main-box .leftSide {
+    line-height: 1.7;
+  }
+  .main-box .rightSide img {
+    display: block;
+  }
+  .aboutMe {
+    width: 85%;
+    margin: 100px auto;
+    padding: 100px 0 0;
+  }
+  .aboutMe .discribution {
+    width: 70%;
+    padding: 0 40px 0 0;
+  }
+  .aboutMe .svgImage {
+    width: 30%;
+    display: block;
+  }
+  .myskills {
+    width: 100%;
+    margin: 0px;
+    padding: 100px 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .myskills .leftSec {
+    display: block;
+  }
+  .myskills .rightSec {
+    margin: 0 20px;
+    padding: 20px;
+  }
+  .myskills .rightSec .theSkills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 20px;
+  }
+  .myskills .rightSec .theSkills .shown-skills,
+  .myskills .rightSec .theSkills .hidden-skills {
+    margin: 0px 25px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div,
+  .myskills .rightSec .theSkills .hidden-skills div {
+    margin: 20px 0px;
+  }
+  .myskills .rightSec .theSkills .shown-skills div h1,
+  .myskills .rightSec .theSkills .hidden-skills div h1 {
+    font-size: 18px;
+  }
+  .myskills .rightSec .theSkills meter::-webkit-meter-bar {
+    width: 210px;
+    height: 15px;
+  }
+  .portfolio {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .portfolio .project {
+    width: 44%;
+    margin: 20px;
+  }
+  .portfolio .project:hover .details {
+    margin-top: -80px;
+  }
+  .contact {
+    width: 85%;
+    margin: 0px auto;
+    padding: 100px 50px;
+  }
+  .contact .social .accounts {
+    display: inline-block;
+  }
+  .contact .social .accounts:first-of-type, .contact .social .accounts:nth-of-type(3) {
+    margin-left: 0;
+  }
+}
+
+/* Large desktop media query */
+@media (min-width: 1200px) {
+  svg {
+    height: auto;
+    position: absolute;
+  }
+  nav {
+    width: 100%;
+    z-index: 30;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 30px 20px;
+  }
+  nav .logo {
+    margin-left: 150px;
+  }
+  nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+  }
+  .main-box {
+    width: 1000px;
+    height: 550px;
+    background: #eee;
+    z-index: 8;
+  }
+  .main-box .leftSide .button {
+    margin: 60px 0 20px;
+  }
+  .aboutMe {
+    width: 1200px;
+    margin: 100px auto;
+    padding: 100px 0 0 100px;
+  }
+  .myskills {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px 50px;
+  }
+  .myskills .leftSec {
+    margin-right: 50px;
+    margin-top: -130px;
+  }
+  .myskills .rightSec .theSkills div {
+    width: 46%;
+  }
+  .myskills .rightSec .theSkills div h1 {
+    font-size: 22px;
+  }
+  .myskills .rightSec .theSkills div meter::-webkit-meter-bar {
+    width: 225px;
+    height: 20px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  .portfolio {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px;
+  }
+  .portfolio .project {
+    width: 31%;
+    margin: 20px 10px;
+    height: 320px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 20px #333;
+            box-shadow: 5px 5px 20px #333;
+  }
+  .portfolio .project:hover .details {
+    margin-top: -110px;
+  }
+  .portfolio .project img {
+    width: 100%;
+    height: 320px;
+    margin-bottom: -30px;
+  }
+  .portfolio .project .details {
+    position: absolute;
+    color: #fff;
+    background: #3726A6;
+    padding: 20px;
+    margin-top: -40px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  .portfolio .project .details h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .portfolio .project .details p {
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    opacity: 0.5;
+    margin: 15px 0;
+  }
+  .contact {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px;
+  }
+  .contact .social .accounts:first-of-type {
+    margin-left: 20px;
+  }
+  .contact .social .accounts:nth-of-type(3) {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

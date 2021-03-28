@@ -1,0 +1,473 @@
+ 
+
+@import 'variables';
+@import 'mixin';
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*The h1 in each of the about me & skills sections*/
+.headers{
+    color: $darkBlue;
+    font-size: 30px;
+    padding: 0 15px;
+    border-left: 5px solid $darkYellow;
+    margin-bottom: 40px;
+}
+
+.svg{
+    width: 100%;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    padding: 40px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+
+    .logo{
+        float: $left;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0;
+        margin-left: 150px;
+
+        a{
+            color: $yellow;
+            text-decoration: none;
+        }
+
+    }
+
+    ul{
+        list-style: none;
+        float: $right;
+        margin-right: 150px;
+
+        li{
+            float: $left;
+            margin: 0 30px;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            @include prefixer(transition, all 0.2s linear, webkit moz o);
+            color: $white;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.active_section{
+    color: $yellow;
+}
+
+.main-box{
+    width: 1000px;
+    height: 550px;
+    border: 5px solid #ddd;
+    border-top-width: 40px;
+    padding: 20px;
+    margin: 0px 17%;
+    position: relative;
+    display: flex;
+    @include prefixer(justify-content, center, webkit moz o);
+    @include prefixer(align-items, center, webkit moz o);
+    flex-direction: row;
+    background: #eee;
+    margin-top: -200px;
+
+
+
+    .leftSide,
+    .rightSide{
+        width: 50%;
+        padding: 20px;
+    }
+
+    .leftSide{
+        line-height: 1.7;
+
+        h1{
+            color: $blue;
+            font-size: 35px;
+        }
+        h3{
+            color: $darkYellow;
+            margin-bottom: 40px;
+            opacity: 0.8;
+        }
+        p{
+            opacity: 0.7;
+            color: $black;
+
+        }
+        .button{
+            border: none;
+            margin: 60px 0 -20px;
+            background: $darkBlue;
+            color: $white;
+            text-decoration: none;
+            padding: 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            display: inline-block;
+
+            &:hover a{
+                transform: scale(1.1);
+            }
+
+            a{
+                color: $white;
+                text-decoration: none;
+
+            }
+        }
+    }
+
+    .rightSide{
+        display: flex;
+        @include prefixer(justify-content, center, webkit moz o);
+
+        img{
+            margin-top: -30px;
+            width: 60%;
+            height: 60%;
+            box-shadow: 70px 70px $yellow;
+        }
+    }
+}
+
+.aboutMe{
+    width: 1200px;
+    margin: 100px auto;
+    padding: 100px 0 0 100px;
+    display: flex;
+    @include prefixer(justify-content, space-between, webkit moz o);
+    @include prefixer(align-items, center, webkit moz o);
+
+    .discribution{
+        width: 70%;
+        padding: 0 40px 0 0;
+
+        p{
+            line-height: 1.7;
+            letter-spacing: 1px;
+            color: $black;
+            opacity: 0.8;
+            font-size: 20px;
+
+            span{
+                color: $darkYellow;
+            }
+        }
+        .Con_A{
+            color: $blue;
+
+            &:hover{
+                color: $darkBlue
+            }
+        }
+    }
+
+    .svgImage{
+        width: 30%;
+    }
+
+}
+
+.myskills{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    display: flex;
+    @include prefixer(justify-content, space-around, webkit moz o);
+    @include prefixer(align-items, center, webkit moz o);
+    overflow: hidden;
+
+    .leftSec{
+        margin-top: -140px;
+    }
+
+    .rightSec{
+        width: 60%;
+
+        .theSkills{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+
+            .shown-skills,
+            .hidden-skills{
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                margin: 0 25px;
+                
+                div{
+                    width: 100%;
+                    padding: 20px;
+                    margin: 20px;
+                    border-radius: 5px;
+                    display: block;
+                    background: $white;
+    
+                    &.html{
+                        color: $html;
+                    }
+    
+                    &.bootstrap{
+                        color: $bootstrap;
+                    }
+                    &.css{
+                        color: $css;
+                    }
+                    &.sass{
+                        color: purple;
+                    }
+                    &.js{
+                        color: $js;
+                    }
+                    &.jquery{
+                        color: $jquery;
+                    }
+
+                    &.react{
+                        color: #61DAFB;
+                    }
+    
+                    h1{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            meter::-webkit-meter-bar{
+                width: 270px;
+                height: 15px;
+                border-radius: 5px;
+                background: $white;
+            }
+            meter::-webkit-meter-optimum-value{
+                background: $black;
+            }
+
+            .see-more{
+                display: none;
+            }
+        }
+
+    }
+}
+
+.portfolio{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px 0;
+
+    .project{
+        width: 30%;
+        margin: 16px;
+        height: 400px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 2px 2px 15px #777;
+
+        &:hover .details{
+            margin-top: -90px;
+        }
+
+        img{
+            width: 100%;
+            height: 350px;
+            margin-bottom: -20px;
+        }
+
+        .details{
+            position: absolute;
+            color: $white;
+            background: $darkBlue;
+            padding: 30px 20px;
+            margin-top: -10px;
+            @include prefixer(transition, all 0.3s linear, webkit moz o);
+
+
+            h2{
+                margin: 0;
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            p{
+                line-height: 1.6;
+                letter-spacing: 1px;
+                opacity: 0.6;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+.contact{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 100px 0px;
+
+
+    .gmail,
+    .phone,
+    .social{
+        width: 100%;
+        padding: 20px;
+        margin: 20px 0;
+
+        h2{
+            color: $red;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        p{
+            background: #f4f4f4;
+            padding: 20px 15px;
+            color: $black;
+            display: inline-block;
+            margin: 20px 30px 0 0;
+            font-size: 20px;
+            box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                        5px 5px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 10px rgba(255,255,255,0.8),
+                        inset 2px 2px 8px rgba(0,0,0,0.1);
+
+
+        }
+
+        b{
+            font-size: 22px;
+        }
+    }
+
+    .social{
+
+        .accounts{
+            background: #f4f4f4;
+            padding: 20px;
+            color: $black;
+            display: inline-block;
+            margin: 20px 30px;
+            cursor: pointer;
+            box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+             5px 5px 10px rgba(0,0,0,0.2);
+            @include prefixer(transition, all 0.2s linear, webkit moz o);
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            &:first-of-type{
+                margin-left: 0
+            }
+
+            a{
+                color: $black;
+                text-decoration: none;
+            }
+
+            i{
+                font-size: 22px;
+                margin: 0 10px;
+
+                &.fa-facebook{
+                    color: #3E578F;
+                }
+                &.fa-instagram-square{
+                    color: #333;
+                }
+                &.fa-linkedin{
+                    color: #0B79B8;
+                }
+            }
+
+            span{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//style of the to top button
+.toTop{
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  padding: 10px;
+  background: $darkBlue;
+  color: $white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  box-shadow: 1px 1px 5px #035;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+  z-index: 100;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background: rgb(10, 9, 9);
+    color: $white;
+    padding: 30px;
+
+    p{
+        opacity: 0.8;
+
+        span{
+            color: $yellow;
+        }
+    }
+
+}
+
+/* it will animate the glowing box in the background... just cansel the comment to see
+
+@keyframes animate{
+    50%{
+        box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                5px 5px 15px rgba(0,0,0,0.1);
+    }
+    100%{
+        box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                5px 5px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 10px rgba(255,255,255,0.8),
+                inset 2px 2px 8px rgba(0,0,0,0.1);
+    }
+}
+
+*/
+
+.hide{
+    display: none !important;
+}

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #f4f4f4;
+}
+
+.body-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f4f4;
+  overflow: hidden;
+
+  position: fixed;
+  z-index: -100;
+}
+
+
+ .body-bg .glowing {
+  position: relative;
+  min-width: 750px;
+  height: 750px;
+  margin: -150px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: colorChange 5s linear infinite;
+          animation: colorChange 5s linear infinite;
+}
+
+.body-bg .glowing:nth-child(even) {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.body-bg .glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+}
+
+.body-bg .glowing span::before {
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: -8px;
+  position: absolute;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.body-bg .glowing span:nth-child(3n + 1)::before {
+  background: #86ff00;
+  -webkit-box-shadow: 0 0 20px #86ff00, 0 0 40px #86ff00, 0 0 60px #86ff00, 0 0 80px #86ff00, 0 0 0 8px rgba(134, 255, 0, 0.1);
+          box-shadow: 0 0 20px #86ff00, 0 0 40px #86ff00, 0 0 60px #86ff00, 0 0 80px #86ff00, 0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+
+.body-bg .glowing span:nth-child(3n + 2)::before {
+  background: #ffd600;
+  -webkit-box-shadow: 0 0 20px #ffd600, 0 0 40px #ffd600, 0 0 60px #ffd600, 0 0 80px #ffd600, 0 0 0 8px rgba(255, 214, 0, 0.1);
+          box-shadow: 0 0 20px #ffd600, 0 0 40px #ffd600, 0 0 60px #ffd600, 0 0 80px #ffd600, 0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+
+.body-bg .glowing span:nth-child(3n + 3)::before {
+  background: #00e2e1;
+  background: #00e2e1;
+  -webkit-box-shadow: 0 0 20px #00e2e1, 0 0 40px #00e2e1, 0 0 60px #00e2e1, 0 0 80px #00e2e1, 0 0 0 8px rgba(0, 226, 225, 0.1);
+          box-shadow: 0 0 20px #00e2e1, 0 0 40px #00e2e1, 0 0 60px #00e2e1, 0 0 80px #00e2e1, 0 0 0 8px rgba(0, 226, 225, 0.1);
+}
+
+.body-bg .glowing span:nth-child(3n + 1) {
+  -webkit-animation: animate 10s alternate infinite;
+          animation: animate 10s alternate infinite;
+}
+
+.body-bg .glowing span:nth-child(3n + 2) {
+  -webkit-animation: animate-reverse 3s alternate infinite;
+          animation: animate-reverse 3s alternate infinite;
+}
+
+.body-bg .glowing span:nth-child(3n + 3) {
+  -webkit-animation: animate 8s alternate infinite;
+          animation: animate 8s alternate infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animate-reverse {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* this is how to declare & use css variables
+   and you can use it in html like you did with the 3 span.
+
+:root{
+    --maincolor: #f00;
+}
+
+p{
+    color: var(--maincolor);
+}
+
+*/
+/*# sourceMappingURL=style.css.map */
