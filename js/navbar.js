@@ -74,6 +74,8 @@ function scrollendHandler() {
 //Show navbar when mouse is over it
 navbar.addEventListener('mousemove', () => {
   mouse = true;
+  navbar.style.background = '#4A44F2';
+
 });
 
 //Hide navbar when mouse leaves
