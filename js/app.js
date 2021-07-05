@@ -25,6 +25,11 @@ fifthProject.addEventListener('click', () => {
   window.open('https://mahmoudsafaya.github.io/save_a_link/');
 });
 
+const sixthProject = document.getElementById('sixth-project');
+sixthProject.addEventListener('click', () => {
+  window.open('https://countries-api.herokuapp.com/');
+});
+
 
 
 // Code for the see more btn

@@ -586,8 +586,6 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    -webkit-box-shadow: 5px 5px 20px #333;
-            box-shadow: 5px 5px 20px #333;
   }
   .portfolio .project:hover .details {
     margin-top: -110px;
