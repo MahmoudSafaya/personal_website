@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Mahmoud Safaya</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/bgAnimate.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -78,7 +79,7 @@
 
     <!--The about me section-->
     <article class="aboutMe" id="About">
-        <section class="discribution">
+        <section class="discribution" data-aos="fade-right">
             <h1 class="headers">About Me</h1>
             <p>Front end developer, computer science student and hard working person. This me tring to bulid a  carrer for myself. I have studied web development for the last two years, I have done a lot of projects and planning to do more<br><br>
                 Business, personal or any other kind of website, just 
@@ -88,7 +89,7 @@
                  This website will be <b>updated</b> from time to time, so keep watching
             </p>
         </section>
-        <section class="svgImage">
+        <section class="svgImage" data-aos="fade-left">
             <img src="./images/Group 45.png" alt="Person">
         </section>
     </article>
@@ -96,11 +97,11 @@
     <!--The skills section-->
     <article class="myskills" id="Skills">
 
-        <section class="leftSec">
+        <section class="leftSec" data-aos="fade-right">
             <img src="./images/Group 65.png" alt="Skill Person">
         </section>
 
-        <section class="rightSec">
+        <section class="rightSec" data-aos="fade-left">
             <h1 class="headers">My Skills</h1>
 
             <div class="theSkills">
@@ -145,9 +146,9 @@
     </article>
 
     <!--The portfolio section-->
-    <article class="portfolio" id="Portfolio">
+    <article class="portfolio" id="Portfolio" data-aos="fade-up">
         <h1 class="headers">My Projects</h1>
-        <div class="project" id="fourth-project">
+        <div class="project" id="fourth-project" data-aos="fade-right">
             <img src="./images/otaku.PNG" alt="Project">
             <div class="details">
                 <h2>News Blog</h2>
@@ -155,7 +156,7 @@
             </div>
         </div>
 
-        <div class="project" id="second-project">
+        <div class="project" id="second-project" data-aos="fade-right">
             <img src="./images/image5.PNG" alt="Project">
             <div class="details">
                 <h2>Restaurant</h2>
@@ -163,7 +164,7 @@
             </div>
         </div>
 
-        <div class="project" id="first-project">
+        <div class="project" id="first-project" data-aos="fade-right">
             <img src="./images/redStore.PNG" alt="Project">
             <div class="details">
                 <h2>Red Store</h2>
@@ -172,7 +173,7 @@
         </div>
 
         <div class="project" id="third-project">
-            <img src="./images/weather.PNG" alt="Project">
+            <img src="./images/weather.PNG" alt="Project" data-aos="fade-right">
             <div class="details">
                 <h2>Weather site</h2>
                 <p>Wanna know the temperature of the day.. Check it here <br /><u>React.js</u></p>
@@ -180,7 +181,7 @@
         </div>
 
         <div class="project" id="fifth-project">
-            <img src="./images/save_a_link.PNG" alt="Project">
+            <img src="./images/save_a_link.PNG" alt="Project" data-aos="fade-right">
             <div class="details">
                 <h2>Save a Link</h2>
                 <p>Need to save an important link, use this website</p>
@@ -188,7 +189,7 @@
         </div>
 
         <div class="project" id="sixth-project">
-            <img src="./images/REST-Countries.jpg" alt="Project">
+            <img src="./images/REST-Countries.jpg" alt="Project" data-aos="fade-right">
             <div class="details">
                 <h2>Countries</h2>
                 <p>A website showing countries info.. Like population and region <br /><u>React.js</u></p>
@@ -197,17 +198,17 @@
     </article>
 
     <!--The contact section-->
-    <article class="contact" id="Contact">
+    <article class="contact" id="Contact"  data-aos="fade-up">
         <h1 class="headers">Contact Me</h1>
-        <div class="gmail">
+        <div class="gmail" data-aos="fade-right">
             <h2>E-MAIL</h2>
             <p>mahmoudsafaya18@gmail.com</p>
         </div>
-        <div class="phone">
+        <div class="phone" data-aos="fade-right">
             <h2>PHONE</h2>
             <p><b>EG:</b> 01554408074</p>
         </div>
-        <div class="social">
+        <div class="social" data-aos="fade-right">
             <h2>SOCIAL MEDIA</h2>
             <div class="accounts">
                 <a href="https://web.facebook.com/me/">
@@ -230,13 +231,17 @@
         </div>
     </article>
 
-    <button class="toTop">UP</button>
+    <button class="toTop" data-aos="fade-down">UP</button>
 
     <!--The footer-->
     <footer>
         <p>copyright &copy; 2020 <span>Mahmoud Safaya</span> all rights reserved</p>
     </footer>
 
+    <!-- scripts for the animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+  
     <script src="https://kit.fontawesome.com/951a4a044c.js" crossorigin="anonymous"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/app.js"></script>
